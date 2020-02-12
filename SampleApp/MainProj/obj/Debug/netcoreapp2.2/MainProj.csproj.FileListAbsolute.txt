@@ -1,0 +1,11 @@
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\bin\Debug\netcoreapp2.2\MainProj.deps.json
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\bin\Debug\netcoreapp2.2\MainProj.runtimeconfig.json
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\bin\Debug\netcoreapp2.2\MainProj.runtimeconfig.dev.json
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\bin\Debug\netcoreapp2.2\MainProj.dll
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\bin\Debug\netcoreapp2.2\MainProj.pdb
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\obj\Debug\netcoreapp2.2\MainProj.csprojAssemblyReference.cache
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\obj\Debug\netcoreapp2.2\MainProj.csproj.CoreCompileInputs.cache
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\obj\Debug\netcoreapp2.2\MainProj.AssemblyInfoInputs.cache
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\obj\Debug\netcoreapp2.2\MainProj.AssemblyInfo.cs
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\obj\Debug\netcoreapp2.2\MainProj.dll
+C:\Users\masahi\Documents\GitKraken\GitSampleRepo\sampleApp\mainproj\obj\Debug\netcoreapp2.2\MainProj.pdb
