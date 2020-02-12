@@ -1673,6 +1673,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "mainproj/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/mainproj.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/mainproj.dll": {}
+        }
       }
     }
   },
@@ -5846,12 +5856,18 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "mainproj/1.0.0": {
+      "type": "project",
+      "path": "../mainproj/mainproj.csproj",
+      "msbuildProject": "../mainproj/mainproj.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.2.0",
+      "mainproj >= 1.0.0",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
     ]
@@ -5863,11 +5879,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\masahi\\Documents\\GitKraken\\GitSampleRepo\\sampleApp\\UTProj\\UTProj.csproj",
+      "projectUniqueName": "C:\\Users\\masahi\\Documents\\GitKraken\\GitSampleRepo\\sampleApp\\utproj\\UTProj.csproj",
       "projectName": "UTProj",
-      "projectPath": "C:\\Users\\masahi\\Documents\\GitKraken\\GitSampleRepo\\sampleApp\\UTProj\\UTProj.csproj",
+      "projectPath": "C:\\Users\\masahi\\Documents\\GitKraken\\GitSampleRepo\\sampleApp\\utproj\\UTProj.csproj",
       "packagesPath": "C:\\Users\\masahi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\masahi\\Documents\\GitKraken\\GitSampleRepo\\sampleApp\\UTProj\\obj\\",
+      "outputPath": "C:\\Users\\masahi\\Documents\\GitKraken\\GitSampleRepo\\sampleApp\\utproj\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5885,7 +5901,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\masahi\\Documents\\GitKraken\\GitSampleRepo\\sampleApp\\mainproj\\mainproj.csproj": {
+              "projectPath": "C:\\Users\\masahi\\Documents\\GitKraken\\GitSampleRepo\\sampleApp\\mainproj\\mainproj.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
