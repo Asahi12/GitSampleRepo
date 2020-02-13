@@ -17,7 +17,11 @@ jobs:
       run: dotnet build --configuration Release
       working-directory: ./SampleApp/MainProj
     - name: Unit Tests
-      run: dotnet test
-      working-directory: ./SampleApp/UTProj 
+      run: |
+        cd MainProj
+        dotnet build
+        cd ../UTProj
+        dotnet test
+      working-directory: ./SampleApp
       
       
