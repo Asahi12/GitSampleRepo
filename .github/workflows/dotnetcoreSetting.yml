@@ -13,7 +13,7 @@ jobs:
         dotnet-version: 2.2.105
     - name: Build with dotnet
       run: dotnet build --configuration Release
-      working-directory: ./SampleApp/MainProj
+      working-directory: ./SampleApp/UTProj
   
   my_second_job:
     name: test Ut
