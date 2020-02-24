@@ -1,9 +1,9 @@
-name: .NET Core
+name: .NET Coreワークフローサンプル
 
 on: [push]
 jobs:
-  my_forst_job:
-    name: build proj
+  build:
+    name: Mainプロジェクトビルド（Debug）
     runs-on: [ubuntu-latest]
     steps:
     - uses: actions/checkout@v1
@@ -12,12 +12,12 @@ jobs:
       with:
         dotnet-version: 2.2.105
     - name: Build with dotnet
-      run: dotnet build --configuration Release
+      run: dotnet build --configuration Debug
       working-directory: ./SampleApp/MainProj
   
-  my_second_job:
-    name: test Ut
-    needs: [my_forst_job]
+  test:
+    name: UTプロジェクト実行
+    needs: [build]
     runs-on: [ubuntu-latest]
     steps:
     - uses: actions/checkout@v1
@@ -26,6 +26,6 @@ jobs:
       with:
         dotnet-version: 2.2.105
     - name: Unit Tests
-      run: dotnet test
+      run: dotnet test --no-build
       working-directory: ./SampleApp/UTProj
       
