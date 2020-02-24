@@ -1,9 +1,9 @@
-name: .NET Core
+name: .NET Coreワークフローサンプル
 
 on: [push]
 jobs:
   build:
-    name: build proj
+    name: Mainプロジェクトビルド（Debug）
     runs-on: [ubuntu-latest]
     steps:
     - uses: actions/checkout@v1
@@ -12,11 +12,11 @@ jobs:
       with:
         dotnet-version: 2.2.105
     - name: Build with dotnet
-      run: dotnet build --configuration Release
+      run: dotnet build --configuration Debug
       working-directory: ./SampleApp/MainProj
   
   test:
-    name: test Ut
+    name: UTプロジェクト実行
     needs: [build]
     runs-on: [ubuntu-latest]
     steps:
