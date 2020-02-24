@@ -4,7 +4,7 @@ on: [push]
 jobs:
   my_forst_job:
     name: build proj
-    runs-on: [windows]
+    runs-on: [ubuntu-latest]
     steps:
     - uses: actions/checkout@v1
     - name: Setup .NET Core
@@ -18,7 +18,7 @@ jobs:
   my_second_job:
     name: test Ut
     needs: [my_forst_job]
-    runs-on: [windows]
+    runs-on: [ubuntu-latest]
     steps:
     - name: Unit Tests
       run: dotnet test
