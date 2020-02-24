@@ -13,13 +13,19 @@ jobs:
         dotnet-version: 2.2.105
     - name: Build with dotnet
       run: dotnet build --configuration Release
-      working-directory: ./SampleApp/UTProj
+      working-directory: ./SampleApp/MainProj
   
   my_second_job:
     name: test Ut
     needs: [my_forst_job]
     runs-on: [ubuntu-latest]
     steps:
+    - uses: actions/checkout@v1
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.2.105
     - name: Unit Tests
-      run: dotnet test ./SampleApp/UTProj/UTProj.csproj
+      run: dotnet test
+      working-directory: ./SampleApp/UTProj
       
