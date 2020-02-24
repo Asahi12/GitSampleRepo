@@ -1,12 +1,10 @@
 name: .NET Core
 
 on: [push]
-
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
+  my_forst_job:
+    name: build proj
+    runs-on: [windows]
     steps:
     - uses: actions/checkout@v1
     - name: Setup .NET Core
@@ -16,12 +14,14 @@ jobs:
     - name: Build with dotnet
       run: dotnet build --configuration Release
       working-directory: ./SampleApp/MainProj
+  
+  my_second_job:
+    name: test Ut
+    needs: [my_forst_job]
+    runs-on: [windows]
+    steps:
     - name: Unit Tests
-      run: |
-        cd MainProj
-        dotnet build
-        cd ../UTProj
-        dotnet test
-      working-directory: ./SampleApp
+      run: dotnet test
+      working-directory: ./SampleApp/UTProj
       
       
